@@ -8,14 +8,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 <body>
-
   <!-- SIDEBAR -->
   <aside class="sidebar">
-    <img src="assets/elderly3.jpg" alt="user profile picture">
-    <button class="sign-in">Sign in</button>
-    <button class="edit">Edit profile</button>
+    <div class="sidebar-profile-info">
+      <img
+        class="sidebar-profile-pic"
+        src="assets/elderly3.jpg"
+        alt="user profile picture"
+      >
+      <div class="sidebar-profile-buttons">
+        <button class="sign-in">Sign in</button>
+        <button class="edit">Edit profile</button>
+      </div>
+    </div>
     <form>
-      <input type="text" name="search" value="search">
+      <input type="text" name="search" placeholder="search">
     </form>
     <ul class="sidenav">
       <li>Home</li>
@@ -24,24 +31,32 @@
       <li>Set New Goal</li>
       <li>Workout Buddy Matcher</li>
     </ul>
-    <h2>Friends</h2>
-    <hr />
-    <div class="img-gallery">
-      <img src="assets/elderly1.jpg" alt="elderly profile picture">
-      <img src="assets/elderly2.jpg" alt="elderly profile picture">
-      <img src="assets/elderly4.jpg" alt="elderly profile picture">
-      <img src="assets/elderly5.jpg" alt="elderly profile picture">
-      <img src="assets/elderly6.jpg" alt="elderly profile picture">
-      <img src="assets/elderly7.jpg" alt="elderly profile picture">
+    <div class="friend-info">
+      <h2>Friends</h2>
+      <hr />
+      <div class="img-gallery">
+        <img src="assets/elderly1.jpg" alt="elderly profile picture">
+        <img src="assets/elderly2.jpg" alt="elderly profile picture">
+        <img src="assets/elderly4.jpg" alt="elderly profile picture">
+        <img src="assets/elderly5.jpg" alt="elderly profile picture">
+        <img src="assets/elderly6.jpg" alt="elderly profile picture">
+        <img src="assets/elderly7.jpg" alt="elderly profile picture">
+      </div>
     </div>
   </aside>
-  
   <div class="main-wrapper">
     <!-- HEADER -->
     <header>
-      <img src="assets/elderly3.jpg" alt="user profile picture">
+      <img
+        class="main-picture"
+        src="assets/elderly3.jpg"
+        alt="user profile picture"
+      >
       <h1>Fran</h1>
-      <p>78 Geezer Groves Nursing Home</p>
+      <p>78
+        <i class="fas fa-map-marker-alt"></i>
+        Geezer Groves Nursing Home
+      </p>
       <h1>58% MATCH</h1>
       <div name="badge-section">
         <h3>Fran's Badges</h3>
@@ -67,7 +82,7 @@
         </div>
       </section>
 
-      <div class="workout-wrapper"> 
+      <div class="workout-wrapper">
         <section class="workout-section">
           <h3>Recent Workouts</h3>
           <ul>
